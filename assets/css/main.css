@@ -2648,7 +2648,7 @@ Cover
 .cover_nav {
   position: relative;
   bottom: 0;
-  z-index: 999;
+  z-index: 99;
   text-align: center;
   padding: 0;
   margin: 0 auto;
