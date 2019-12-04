@@ -364,6 +364,12 @@ img {
 #contact .contact-email {
   margin-bottom: 20px;
 }
+
+#contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
 @media (max-width: 768px) {
   #contact .contact-address,
   #contact .contact-phone,
