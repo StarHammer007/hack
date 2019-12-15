@@ -176,19 +176,22 @@ ul.nosyely_list {
 }
 
 .brand_item {
-  opacity: 1.0;
+  opacity: 0.4;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+  
 }
 .brand_item img {
   display: block;
-  max-width: 130px;
+  max-width: 200px;
   margin: 0 auto;
 }
 .brand_item:hover {
   opacity: 1;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .icon_list {
@@ -356,7 +359,7 @@ img {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: #0652fd;
 }
 
 #contact .contact-address,
@@ -3224,6 +3227,7 @@ Cover
 # Schedule Section
 --------------------------------------------------------------*/
 
+/*
 .section-header {
   margin-bottom: 60px;
   position: relative;
@@ -3256,6 +3260,87 @@ Cover
   font-size: 18px;
   font-weight: 500;
   color: #9195a2;
+}
+*/
+
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #0652fd;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #0e1b4d;
+  margin-bottom: 8px;
+}
+
+.section-header h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  color: #0e1b4d;
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.section-header .title_contact {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.section-subheader {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-subheader::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0652fd;
+  bottom: 0;
+  left: calc(50% - 40px);
+  margin-bottom: 10px;
+}
+
+.section-subheader h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  color: #0e1b4d;
+  margin-bottom: 8px;
 }
 
 .section-with-bg {
