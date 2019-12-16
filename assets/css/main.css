@@ -417,6 +417,7 @@ img {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
+  text-transform: lowercase;
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -426,89 +427,6 @@ img {
 #devfolio-apply-now:hover {
   background-color: #2954BF !important;
 }
-
-
-#devfolio-apply-now2 {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: #3770FF;
-  border-radius: 3px;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px 20px;
-  text-align: center;
-}
-
-#devfolio-apply-now2:not([disabled]) {
-  cursor: pointer;
-}
-
-#devfolio-apply-now2:hover {
-  background-color: #2954BF !important;
-}
-
-#devfolio-apply-now3 {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: #3770FF;
-  border-radius: 3px;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px 20px;
-  text-align: center;
-}
-
-#devfolio-apply-now3:not([disabled]) {
-  cursor: pointer;
-}
-
-#devfolio-apply-now3:hover {
-  background-color: #2954BF !important;
-}
-
-#devfolio-apply-now4 {
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: #3770FF;
-  border-radius: 3px;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px 20px;
-  text-align: center;
-}
-
-#devfolio-apply-now4:not([disabled]) {
-  cursor: pointer;
-}
-
-#devfolio-apply-now4:hover {
-  background-color: #2954BF !important;
-}
-
 /* ----------------Responsive Align ------------------- */
 @media all and (max-width: 767px) {
   .text-center-xs {
@@ -2443,7 +2361,6 @@ footer .newsletter_form .form-control {
 .btn {
   font-size: 12px;
   line-height: 1.7;
-  text-transform: uppercase;
   color: #fff;
   font-weight: 500;
   border-radius: 0;
