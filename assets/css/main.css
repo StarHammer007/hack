@@ -80,6 +80,8 @@ p:last-child {
   margin-bottom: 0;
 }
 
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -176,19 +178,22 @@ ul.nosyely_list {
 }
 
 .brand_item {
-  opacity: 1.0;
+  opacity: 0.4;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+  
 }
 .brand_item img {
   display: block;
-  max-width: 130px;
+  max-width: 200px;
   margin: 0 auto;
 }
 .brand_item:hover {
   opacity: 1;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .icon_list {
@@ -356,7 +361,7 @@ img {
 }
 
 #contact .contact-info a:hover {
-  color: #f82249;
+  color: #0652fd;
 }
 
 #contact .contact-address,
@@ -389,12 +394,87 @@ img {
   background: url("../img/bg/form.jpg") top center;
 }
 
-.coc_class{
-  text-align: center;
-  margin-top: 70px;
-  background: #e2e4e6;
+.coc {
+  background-color: #0b031b;
+  padding-top: 100px;
+  font-family: "San Francisco",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.coc h2{
+  font-family: "San Francisco",Helvetica,Arial,sans-serif;
+
+  color: red;
+}
+.coc_p {
+  font-family: "San Francisco",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+.coc p {
+  margin-bottom: 40px;
 }
 
+
+
+/*---------------------Devfolio-----------------------*/
+
+#devfolio-apply-now {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #3770FF;
+  border-radius: 3px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+#devfolio-apply-now:not([disabled]) {
+  cursor: pointer;
+}
+
+#devfolio-apply-now:hover {
+  background-color: #2954BF !important;
+}
+
+#devfolio-apply-now2 {
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #3770FF;
+  border-radius: 3px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+  text-transform: none;
+}
+
+#devfolio-apply-now2:not([disabled]) {
+  cursor: pointer;
+}
+
+#devfolio-apply-now2:hover {
+  background-color: #2954BF !important;
+}
 /* ----------------Responsive Align ------------------- */
 @media all and (max-width: 767px) {
   .text-center-xs {
@@ -2206,6 +2286,31 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+.footer-contact {
+  text-align: center;
+  display: inline;
+  margin-bottom: 10px;
+}
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #222636;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+
 /*  ----------------------------------------------------
 3 Footer
 -------------------------------------------------------- */
@@ -2329,21 +2434,19 @@ footer .newsletter_form .form-control {
 .btn {
   font-size: 12px;
   line-height: 1.7;
-  text-transform: uppercase;
   color: #fff;
   font-weight: 500;
-  padding: 12px 40px;
   border-radius: 0;
   outline: 0 !important;
   border: none;
   cursor: pointer;
-  background-color: #18181c;
+/*  background-color: #18181c; */
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .btn:hover {
   color: #18181c;
-  background-color: #fff;
+/*  background-color: #fff;  */
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
@@ -3224,6 +3327,7 @@ Cover
 # Schedule Section
 --------------------------------------------------------------*/
 
+/*
 .section-header {
   margin-bottom: 60px;
   position: relative;
@@ -3257,11 +3361,95 @@ Cover
   font-weight: 500;
   color: #9195a2;
 }
+*/
 
-.section-with-bg {
-  background-color: #f6f7fd;
+.section-header {
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 15px;
 }
 
+.section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #0652fd;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+
+.section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #0e1b4d;
+  margin-bottom: 8px;
+}
+
+.section-header h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  color: #0e1b4d;
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+}
+
+.section-header .title_contact {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.section-subheader {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-subheader::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0652fd;
+  bottom: 0;
+  left: calc(50% - 40px);
+  margin-bottom: 10px;
+}
+
+.section-subheader h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  color: #0e1b4d;
+  margin-bottom: 8px;
+}
+
+.section-with-bg {
+  background-color: #f0f1fa;
+}
+
+.section-with-bg-faq {
+  background-color: #f0f1fa;
+}
 
 #schedule {
   padding: 60px 0 60px 0;
@@ -3403,7 +3591,14 @@ Cover
 }
 
 #faq #faq-list li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-left: 2px solid #ddd;
+  border-radius: 10%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
 }
 
 #faq #faq-list a {
@@ -3439,6 +3634,21 @@ Cover
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
 }
+
+#faq #faq-list a.ancor {
+  padding: 0 2 0 2;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  margin: 0 0 0 0;
+  line-height: 24px;
+  color: #838383;
+}
+
+#faq #faq-list a.ancor:hover,
+#faq #faq-list a.ancor:focus {
+  color: #19328e;
+}
+
 
 @media (max-width: 768px) {
   .back-to-top {
