@@ -3580,6 +3580,19 @@ Cover
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/
+ .row {
+  margin: 25px ;
+  border-left: 10px;
+  border-right: 10px;
+}
+.column {
+  width: 50%;
+ padding:10px;
+ border-left: 10px;
+ border-right: 10px;
+ box-sizing: border-box;
+}
+
 
 #faq {
   padding: 60px 0;
@@ -3621,6 +3634,7 @@ Cover
 
 #faq #faq-list p {
   margin-bottom: 20px;
+  
 }
 
 #faq #faq-list a.collapse {
@@ -3650,7 +3664,7 @@ Cover
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .back-to-top {
     bottom: 15px;
   }
