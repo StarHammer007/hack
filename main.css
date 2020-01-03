@@ -3581,9 +3581,12 @@ Cover
 # F.A.Q Section
 --------------------------------------------------------------*/
  .row {
-  margin: 25px ;
-  border-left: 10px;
-  border-right: 10px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  list-style: none;
+  
 }
 .column {
   width: 50%;
@@ -3668,6 +3671,20 @@ Cover
   .back-to-top {
     bottom: 15px;
   }
+   .row {
+  width: 90%;
+  margin-left: 20px;
+  border-left: 10px;
+  border-right: 10px;
+}
+.column {
+  width: 50%;
+ padding:10px;
+ border-left: 10px;
+ border-right: 10px;
+ box-sizing: border-box;
+}
+
 
   #faq #faq-list a {
     font-size: 18px;
