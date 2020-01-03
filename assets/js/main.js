@@ -86,6 +86,9 @@ $(document).ready(function() {
         responsiveClass:true,
         responsive:{
             0:{
+                items:1
+            },
+            450:{
                 items:2
             },
             600:{
