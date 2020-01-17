@@ -95,7 +95,7 @@ $(document).ready(function() {
                 items:3
 
             },
-            100:{
+            1000:{
                 items:4
 
             },
