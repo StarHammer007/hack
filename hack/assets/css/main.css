@@ -188,6 +188,7 @@ ul.nosyely_list {
   max-width: 200px;
   margin: 0 auto;
 }
+
 .brand_item:hover {
   opacity: 1;
   -webkit-transition: all ease-in-out 0.4s;
@@ -3073,6 +3074,7 @@ Cover
 .price_box {
   position: relative;
   padding: 75px 30px;
+  text-transform: capitalize;
   margin-bottom: 30px;
   text-align: center;
   background-color: #e2e4e6;
@@ -3080,23 +3082,37 @@ Cover
   transition: all ease-in-out 0.4s;
 }
 .price_box.first{
-  position: relative;
-  padding: 105px 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  background-color: #f0f2f6;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
+
+  background-color: yellow;
+  
 }
 .price_box.second{
+background-color: lawngreen;
+}
+
+.price_box.third{
+  background-color: rgb(255, 77, 240);
+}
+
+.price_box.special {
   position: relative;
-  padding: 90px 30px;
+  padding: 75px 30px;
   margin-bottom: 30px;
+  margin: 30px;
   text-align: center;
-  background-color: #eef0f4;
+  background-color: #0652fd;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
+
+.price_box.special p{
+  color: #dddddd;
+}
+
+.price_box.special h3{
+  color: #dddddd;
+}
+
 .price_box .price_highlight {
   background-color: #0652fd;
   font-weight: 700;
@@ -3447,10 +3463,6 @@ Cover
   background-color: #f0f1fa;
 }
 
-.section-with-bg-faq {
-  background-color: #f0f1fa;
-}
-
 #schedule {
   padding: 60px 0 60px 0;
 }
@@ -3585,14 +3597,6 @@ Cover
   border-left: 10px;
   border-right: 10px;
 }
-.column {
-  width: 50%;
- padding:10px;
- border-left: 10px;
- border-right: 10px;
- box-sizing: border-box;
-}
-
 
 #faq {
   padding: 60px 0;
